@@ -1,0 +1,47 @@
+<head>
+    <title>basic</title>
+</head>
+
+<body>
+
+</body>
+
+<template name="layout">
+    {{> yield}} 
+</template>
+
+<template name="Home">
+    {{> Nav}}
+
+    <h1>Home</h1>
+
+    <p>
+        Data Title: {{title}}
+    </p>
+</template>
+
+<template name="One">
+    {{> Nav}}
+
+    <h1>Pagina 1</h1>
+</template>
+
+<template name="Two">
+    {{> Nav}}
+
+ <h1>Pagina dos</h1>
+</template>
+
+<template name="Nav">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/one">Pagina uno</a>
+        </li>
+        <li>
+            <a href="/two">Pagina dos</a>
+        </li>
+    </ul>
+</template>
